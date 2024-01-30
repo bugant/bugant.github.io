@@ -54,8 +54,10 @@ rm -r vendor/hiredis
 %pyproject_check_import
 %pytest --import-mode append
 
+
 %files -n python3-hiredis -f %{pyproject_files}
 %doc README.md
+
 
 %changelog
 %autochangelog
