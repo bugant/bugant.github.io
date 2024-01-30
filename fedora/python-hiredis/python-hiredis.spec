@@ -1,5 +1,5 @@
 Name:           python-hiredis
-Version:        2.2.3
+Version:        2.3.2
 Release:        %autorelease
 Summary:        Python wrapper for hiredis
 
@@ -13,9 +13,9 @@ Source:         %{url}/archive/refs/tags/v%{version}.tar.gz
 # - https://github.com/redis/hiredis-py/pull/161
 Patch0:         use-system-hiredis.patch
 
-BuildRequires:  python3-devel
-BuildRequires:  hiredis-devel
-BuildRequires:  gcc
+BuildRequires: python3-devel
+BuildRequires: hiredis-devel
+BuildRequires: gcc
 BuildRequires: python3dist(pytest)
 
 
@@ -51,14 +51,11 @@ rm -r vendor/hiredis
 
 
 %check
-echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 %pyproject_check_import
-echo "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY"
 %pytest --import-mode append
 
 %files -n python3-hiredis -f %{pyproject_files}
 %doc README.md
-
 
 %changelog
 %autochangelog
