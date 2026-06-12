@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: 'Inconsolata', Courier;
+            color: #333333;
+            background-color: #fcfcfc;
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        h1, h2, h3 {
+            font-family: Georgia, serif;
+            color: #111111;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .site-title a {
+            text-decoration: none;
+            color: #111111;
+        }
+
+        a {
+            color: #2244bb;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .post-meta {
+            color: #777777;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eeeeee;
+            margin: 40px 0;
+        }
+
+        ul.posts-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.posts-list li {
+            margin-bottom: 12px;
+        }
+
+        .post-date {
+            color: #888888;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="site-title"><a href="/">bugant</a></h1>
+        <hr>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <hr>
+        <p style="font-size: 12px; color: #888888;">&copy; {{ "now" | date: "%Y" }}</p>
+    </footer>
+</body>
+</html>
