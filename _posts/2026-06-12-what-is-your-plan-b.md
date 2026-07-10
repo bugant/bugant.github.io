@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "What’s your Plan B?"
 ---
 
