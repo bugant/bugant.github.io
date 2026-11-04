@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Bot I Never Wrote"
 ---
 I have a bot running in production, and I have no idea what's going on inside it. I never read its code. I didn't even *write* it. And that was the whole point.
